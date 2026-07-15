@@ -23,6 +23,9 @@ void update_imports(void);
 // from the bass module (pre-finalize) via this setter.
 void bass_hook_set_reals(
     uintptr_t play, uintptr_t stop, uintptr_t setsync, uintptr_t setpos,
-    uintptr_t flags, uintptr_t screatefile, uintptr_t screate, uintptr_t screateuser);
+    uintptr_t flags, uintptr_t screatefile, uintptr_t screate, uintptr_t screateuser,
+    uintptr_t isactive);
+
+void bass_music_keepalive(void);
 
 #endif
